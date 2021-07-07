@@ -1,0 +1,125 @@
+.rasp {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.rectangle {
+    width: 500px;
+    height: 570px;
+    background: #606060;
+    border-radius: 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.screen {
+    height: 100px;
+    width: 400px;
+
+    float: center;
+
+    background: #3ca2c3;
+    border-radius: 20px;
+
+    font-size: 80px;
+    color: white;
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+.keys span {
+    float: left;
+    position: relative;
+    top: 0;
+
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+
+    background: #989898;
+    border-radius: 10px;
+
+    margin: 0 23px 0 23px;
+
+    color: white;
+    line-height: 65px;
+    font-size: 60px;
+    text-align: center;
+}
+
+.keys span.operator {
+    background: #3ca2c3;
+}
+
+.keys span.eval {
+    background: orange;
+}
+
+.keys span.clear {
+    background: #ff0000;
+}
+
+.keys span:active {
+    background: #737373;
+}
+
+.keys span.eval:active {
+    background: #ff8000;
+}
+
+.keys span.clear:active {
+    background: #e60000;
+}
+
+.keys span.operator:active {
+    background: #008fb3;
+}
+
+.logirovaniye {
+    height: 488px;
+    width: 310px;
+    border-radius: 20px;
+    background: #fff;
+    border: 1px solid #C1C1C1;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.output {
+    text-align: center;
+}
+
+@media all and (max-width: 765px) {
+    .rectangle {
+        width: 320px;
+        height: 330px;
+    }
+
+    .screen {
+        height: 50px;
+        width: 300px;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .keys span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 30px;
+    }
+
+    .logirovaniye {
+        height: 330px;
+        width: 320px;
+    }
+
+    .rasp {
+        flex-direction: column;
+    }
+}
